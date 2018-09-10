@@ -21,3 +21,10 @@ You can see this in many ways:
  * since protocol messages are padded, features such as dynamic arrays do not work in places you expect
  * upgradeability is not built-in
  * no ubiquitous package management yet
+
+## A Guide
+I've tried to organise this guide into various topics that commonly crop up in the software engineering practice of building smart contracts.
+
+ - **[Data modelling](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/data-modelling.md)**: the common patterns of separating concerns (i.e. MVC)
+ - **[Testing](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/testing.md)**: the simplest patterns for writing unit and integration tests for smart contract systems / dApps.
+ - **[Solidity semantics](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/solidity.md)**: common gotcha's/suprises in the semantics of Solidity
