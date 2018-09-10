@@ -1,5 +1,5 @@
-awesome-solidity-patterns
-=========================
+awesome-solidity-patterns 💻🐍
+==============================
 
 An accomplice to the [Consensys "Smart Contract Best Practices"](https://consensys.github.io/smart-contract-best-practices/), but with less security and more engineering focus. WIP.
 
@@ -23,8 +23,11 @@ You can see this in many ways:
  * no ubiquitous package management yet
 
 ## A Guide
+I've decided to write a guide of the knowledge base I've been building up - for those who understand code, who know the fundamentals of blockchain, but don't want to trawl through 200 poorly-written half-answered StackExchange questions and blog posts.
+
 I've tried to organise this guide into various topics that commonly crop up in the software engineering practice of building smart contracts.
 
  - **[Data modelling](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/data-modelling.md)**: the common patterns of separating concerns (i.e. MVC)
  - **[Testing](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/testing.md)**: the simplest patterns for writing unit and integration tests for smart contract systems / dApps.
  - **[Solidity semantics](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/solidity.md)**: common gotcha's/suprises in the semantics of Solidity
+
