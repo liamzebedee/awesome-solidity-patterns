@@ -10,6 +10,11 @@
 
 **Note 2**: contracts are annotated with their date of most recent design - this should help in understanding how the space has so rapidly evolved.
 
- - [DAO](https://sourcegraph.com/github.com/slockit/DAO@master/-/blob/DAO.sol) - the original Ethereum lovechild - the Decentralized Autonomous Organisation.
- - [Augur](https://sourcegraph.com/github.com/AugurProject/augur-core@master/-/tree/source/contracts): the decentralised prediction market.
+ - [DAO](https://sourcegraph.com/github.com/slockit/DAO@master/-/blob/DAO.sol) (2016) - the original Ethereum lovechild - the Decentralized Autonomous Organisation.
+ - [CryptoKitties](https://github.com/cryptocopycats/awesome-cryptokitties/tree/master/contracts) (2017) - the first popular DAapp - tradable, breedable, cryptokitties!
+ - [Augur](https://sourcegraph.com/github.com/AugurProject/augur-core@master/-/tree/source/contracts) (Sep 2018): the decentralised prediction market.
  
+## Standards
+ - [ERC-20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard): tokens
+ - [ERC-721](http://erc721.org/): unique/fungible tokens
+ - [ERC-1155](https://blog.enjincoin.io/erc-1155-the-crypto-item-standard-ac9cf1c5a226): crypto items
