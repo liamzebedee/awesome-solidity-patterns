@@ -15,6 +15,8 @@
  - [Augur](https://sourcegraph.com/github.com/AugurProject/augur-core@master/-/tree/source/contracts) (Sep 2018): the decentralised prediction market.
  
 ## Standards
+List of [Ethereum Improvement Proposals](https://eips.ethereum.org/erc). Ubiquitous and/or ones to know:
+
  - [ERC-20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard): tokens
  - [ERC-721](http://erc721.org/): unique/fungible tokens
  - [ERC-1155](https://blog.enjincoin.io/erc-1155-the-crypto-item-standard-ac9cf1c5a226): crypto items
