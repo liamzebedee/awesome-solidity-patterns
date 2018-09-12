@@ -1,3 +1,8 @@
+# Testing
+Not only does Test-Driven Development make your codebase stellar, it's extremely useful when interacting with a new language with different semantics. And surprisingly, it's actually not so hard in Ethereum development to get started with it!
+
+The Truffle framework makes it very easy to test contracts with Solidity and JS. 
+
 ## Unit testing
 Unit testing is for specific functions
 
@@ -36,3 +41,26 @@ async function txWithReturnValue(method, ...args) {
 
 await txWithReturnValue(Contract.method, 1, "0x123", { from: "0x12312", value: 2 }); 
 ```
+
+### Testing with various 'users'
+You will want to test the contract's interaction from the POV of multiple users with different addresses (whether it be human or other contracts). This is quite easy to achieve.
+
+Whenever you transact with a contract in calling a method, you have the option to specify the `from` address of who will be funding the tx. Below is a Truffle test which combines this with access to `accounts`, which is the same output as web3.personal.getListAccounts:
+
+```js
+const MyContract = artifacts.require("./MyContract.sol");
+
+contract('MyContract', async (accounts) => {
+  it('tests with various users', async () => {
+    let instance = await MyContract.new();
+    for(let i = 0; i < 5; i++) {
+      let from = accounts[i];
+      console.log(`Submitting tx from addr: ${from}`);
+      let txid = await instance.yourMethod.sendTransaction(arg1, arg2, { from, });
+    }
+  })
+})
+```
+
+
+
