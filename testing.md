@@ -1,10 +1,12 @@
 # Testing
 Not only does Test-Driven Development make your codebase stellar, it's extremely useful when interacting with a new language with different semantics. And surprisingly, it's actually not so hard in Ethereum development to get started with it!
 
-The Truffle framework makes it very easy to test contracts with Solidity and JS. 
+The Truffle framework makes it very easy to test contracts with Solidity and JS. Beware:
+ * while you can test contracts in Solidity, I highly advise you don't. The tooling is *very* nascent, and Solidity itself has very few libraries already - you won't be able to load test data (fixtures) from files for example, since Solidity doesn't have an FS API like JS/Node does.
+ * for unit testing simple functions, Solidity comes in handy. However you might find using Remix IDE just as quick for accomplishing this to start with (although you won't reap the benefits of having a test later when your code breaks ;)).
 
 ## Unit testing
-Unit testing is for specific functions
+Unit testing is for testing individual functions of your contracts. 
 
 ## Integration testing
 Integration testing generally requires multiple interactions from various users/contracts. Since this requires the use of multiple addresses, it is unsuitable to accomplish in Solidity as above.
