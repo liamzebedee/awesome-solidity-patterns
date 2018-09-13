@@ -5,6 +5,29 @@ The Truffle framework makes it very easy to test contracts with Solidity and JS.
  * while you can test contracts in Solidity, I highly advise you don't. The tooling is *very* nascent, and Solidity itself has very few libraries already - you won't be able to load test data (fixtures) from files for example, since Solidity doesn't have an FS API like JS/Node does.
  * for unit testing simple functions, Solidity comes in handy. However you might find using Remix IDE just as quick for accomplishing this to start with (although you won't reap the benefits of having a test later when your code breaks ;)).
 
+## Debugging
+Testing is important, but you will never ascertain as much information as to the execution of a contract as by using the official debugger tooling, the Remix IDE ([demo](https://remix.ethereum.org/), [docs](https://remix.readthedocs.io/en/latest/)).
+
+Remix is a big of a hack piece put together, but it works very well once you're using it correctly. It can run Solidity in a JavaScript VM, an injected Web3 provider (e.g. Metamask) or connect to your local Ganache / other setup on `http://localhost:8545`. 
+
+### Using Remix like a pro
+Remix is a web app, so it doesn't have access to your file system (whether you access it from remix.ethereum.org or as an Electron desktop app). While you can copy-paste code in, it's much better to install `remixd`, which will expose a local folder to Remix.
+
+ 1. Install it globally and save the dep - ```npm install -g -S remixd```
+ 2. Add this to your `package.json`.
+    ```json
+    {
+      "scripts": {
+        "remix": "remixd -s .",
+       }
+    }
+    ```
+  3. Run `yarn remix`
+
+`remixd` knows to look into `node_modules` for imported contracts (e.g. SafeMath) from packages like OpenZeppelin, so we run it in our project root `.` rather than in `./contracts` as you might assume.
+
+
+
 ## Unit testing
 Unit testing is for testing individual functions of your contracts. 
 
