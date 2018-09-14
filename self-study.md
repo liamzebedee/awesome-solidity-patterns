@@ -14,6 +14,10 @@
  - [CryptoKitties](https://github.com/cryptocopycats/awesome-cryptokitties/tree/master/contracts) (2017) - the first popular DAapp - tradable, breedable, cryptokitties!
  - [Augur](https://sourcegraph.com/github.com/AugurProject/augur-core@master/-/tree/source/contracts) (Sep 2018): the decentralised prediction market.
  
+## Security
+ - Even the advice about how many confirmations is considered secure [is varied](https://ethereum.stackexchange.com/questions/319/what-number-of-confirmations-is-considered-secure-in-ethereum)
+ - From the leading Ethereum venture studio, Consensys - [Ethereum Smart Contract Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)
+
 ## Standards
 List of [Ethereum Improvement Proposals](https://eips.ethereum.org/erc). Ubiquitous and/or ones to know:
 
