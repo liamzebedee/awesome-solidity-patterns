@@ -13,6 +13,7 @@
  - [DAO](https://sourcegraph.com/github.com/slockit/DAO@master/-/blob/DAO.sol) (2016) - the original Ethereum lovechild - the Decentralized Autonomous Organisation.
  - [CryptoKitties](https://github.com/cryptocopycats/awesome-cryptokitties/tree/master/contracts) (2017) - the first popular DAapp - tradable, breedable, cryptokitties!
  - [Augur](https://sourcegraph.com/github.com/AugurProject/augur-core@master/-/tree/source/contracts) (Sep 2018): the decentralised prediction market.
+ - Gnosis: another prediction platform. [contracts](https://sourcegraph.com/github.com/gnosis/pm-contracts/-/tree/contracts) and those for [dutch auctions](https://sourcegraph.com/github.com/gnosis/dx-contracts/-/blob/contracts/DutchExchange.sol)
 
 ## Functionality
  - Paying for smart contract executions using tokens ([1](https://medium.com/@jgm.orinoco/ethereum-smart-service-payment-with-tokens-60894a79f75c))
