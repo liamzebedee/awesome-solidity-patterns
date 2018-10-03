@@ -32,7 +32,7 @@ emitter.on('data', ev => {
 ## Making large numbers of requests
 Running and connecting to a WebSocket server is much more performant for many calls (especially in parallel). However, even more performant (and HTTP-compatible) is using batch requests in Web3 1.x. Unfortunately, Web3 doesn't yet support batch requests with Promises (only callbacks) - below will help:
 
-```
+```js
 function makeBatchRequest(calls) {
     let batch = new web3.BatchRequest();
 
