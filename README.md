@@ -32,4 +32,5 @@ I've tried to organise this guide into various topics that commonly crop up in t
  - **[Testing](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/testing.md)**: the simplest patterns for writing unit and integration tests for smart contract systems / dApps.
  - **[Solidity semantics](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/solidity.md)**: common gotcha's/suprises in the semantics of Solidity
  - **[Self-study](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/self-study.md)**: read the codebases of larger projects, and run example contracts created by others to get tactile understanding of the language
+ - **[Web3](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/web3.md)**: usage patterns for JavaScript interaction with Solidity
 
