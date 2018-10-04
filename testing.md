@@ -5,6 +5,13 @@ The Truffle framework makes it very easy to test contracts with Solidity and JS.
  * while you can test contracts in Solidity, I highly advise you don't. The tooling is *very* nascent, and Solidity itself has very few libraries already - you won't be able to load test data (fixtures) from files for example, since Solidity doesn't have an FS API like JS/Node does.
  * for unit testing simple functions, Solidity comes in handy. However you might find using Remix IDE just as quick for accomplishing this to start with (although you won't reap the benefits of having a test later when your code breaks ;)).
 
+## Running a persistent test blockchain
+A persistent chain is often useful when you want to test a frontend UI, and you need to persist the data you've transacted onto a blockchain. You can use Ganache (née testrpc) CLI to do this:
+
+`ganache-cli -d --db ./ganache --gasPrice 1 --gasLimit 10000000 --networkId 123 -u 0 -u 1`
+
+This will persist data to `./ganache` and most importantly set the network ID (otherwise this is generated from system time on startup, and is not 'persistent' otherwise).
+
 ## Debugging
 Testing is important, but you will never ascertain as much information as to the execution of a contract as by using the official debugger tooling, the Remix IDE ([demo](https://remix.ethereum.org/), [docs](https://remix.readthedocs.io/en/latest/)).
 
