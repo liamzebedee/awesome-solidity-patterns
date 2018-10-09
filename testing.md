@@ -12,6 +12,9 @@ A persistent chain is often useful when you want to test a frontend UI, and you 
 
 This will persist data to `./ganache` and most importantly set the network ID (otherwise this is generated from system time on startup, and is not 'persistent' otherwise).
 
+### Connecting MetaMask with your test blockchain wallets
+When you run Ganache CLI, it will list private keys on first launch in hex form. You can import these into Metamask and then access your 100 ETH issued by default.
+
 ## Debugging
 Testing is important, but you will never ascertain as much information as to the execution of a contract as by using the official debugger tooling, the Remix IDE ([demo](https://remix.ethereum.org/), [docs](https://remix.readthedocs.io/en/latest/)).
 
