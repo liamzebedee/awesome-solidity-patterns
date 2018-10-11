@@ -15,6 +15,27 @@ This will persist data to `./ganache` and most importantly set the network ID (o
 ### Connecting MetaMask with your test blockchain wallets
 When you run Ganache CLI, it will list private keys on first launch in hex form. You can import these into Metamask and then access your 100 ETH issued by default.
 
+### Gas
+You will probably encounter issues with gas. Note that contracts cannot be bigger than 24,000 bytes, and transactions no bigger than 32kb ([source](https://ethereum.stackexchange.com/questions/47539/how-big-could-be-contract-size)).
+
+Contract creations take gas, which you can estimate with `estimateGas`. Gas is the internal Ethereum unit for pricing computation, and is converted at a fixed rate to Ether (set by clients), termed the **gasPrice**. It is measured in the smallest unit, which is gwei. The **gasLimit** is the maximum amount of gas that can be used in one setting.
+
+An example of some gas arithmetic:
+
+```
+estimateGas(YourContract)
+=> 286056
+
+# if we run a test blockchain with a gas price of 2 (2 units for 1 gwei)
+ganache-cli --gasLimit 100000000000 --gasPrice 2 
+
+then the minimum amount to send with the transaction is:
+286056 * 2 = 572,112 gwei
+0.000572112 ETH
+```
+
+You might be tempted to set `gasLimit` to something like `1000000000000000`. This will break Metamask, as it can't encode that value into 53 bits for BigNumber ([see here](https://github.com/ethereumjs/ethereumjs-vm/issues/114)).
+
 ## Debugging
 Testing is important, but you will never ascertain as much information as to the execution of a contract as by using the official debugger tooling, the Remix IDE ([demo](https://remix.ethereum.org/), [docs](https://remix.readthedocs.io/en/latest/)).
 
