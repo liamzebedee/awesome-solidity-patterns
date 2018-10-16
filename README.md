@@ -34,3 +34,4 @@ I've tried to organise this guide into various topics that commonly crop up in t
  - **[Self-study](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/self-study.md)**: read the codebases of larger projects, and run example contracts created by others to get tactile understanding of the language
  - **[Web3](https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/web3.md)**: usage patterns for JavaScript interaction with Solidity
 
+Take a further read of https://github.com/fravoll/solidity-patterns
